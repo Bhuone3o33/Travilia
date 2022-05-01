@@ -44,6 +44,7 @@ nav .navbar ul li{
     list-style: none;
     display: inline-block;
     margin-right: 50px;
+    position:relative;
     
 }
 nav  .navbar ul li a{
@@ -58,6 +59,36 @@ nav ul li a:hover{
     color: rgb(70, 216, 216);
 }
 
+.navbar ul li ul{
+    display:none;
+    color:white;
+    height:15rem;
+    position:absolute;
+    background-color:rgba(0,0,0,0.4);
+    padding:10px;
+    overflow:scroll;
+    border-radius:0px 0px 4px 4px;
+
+}
+.navbar ul li ul::-webkit-scrollbar {
+    display: none;
+}
+/* here is hover effect */
+ .navbar ul li:hover ul{
+    display:block;
+
+} 
+
+.navbar ul li ul li {
+    padding:12px 14px;
+    margin:0px
+}
+.navbar ul li ul li{
+    width:180px;
+}
+.navbar ul li ul li a{
+    font-weight:lighter;
+}
 
 
 

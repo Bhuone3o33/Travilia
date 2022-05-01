@@ -49,7 +49,7 @@ var b=document.getElementById("in2").value;
 function login(){
   // if (a==="Bhuvan" && b==="Bhuvan"){
     alert("successfully Login!!\n:)")
-    location.reload()
+    location.href="Travilia.com.html"
  
   // }
   // else{

@@ -7,24 +7,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sikkim</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Slideshow css -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+            margin-top: 30px;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+
+        /* Caption text */
+        .text {
+            color: #ffffff;
+            font-size: 43px;
+            font-family: 'Great Vibes', cursive;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3, 2/3,...) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots */
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #0000004b;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 3s;
+            animation-name: fade;
+            animation-duration: 3s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
-        
-        <p class="logo">  &#8203; </p>
-        <ul>
-            <li><a class="hd" href="#">Home</a></li>
-            <li><a class="hd" href="#">Tour</a></li>
-            <li><a class="hd" href="#">Map</a></li>
-            <li><a class="hd" href="#">States</a></li>
-            <li><a class="hd" href="#">About us</a></li>
-            
-        </ul>
+        <!-- &#8203; -->
+        <p class="logo">  Travilia.com </p>
+        <div class="navbar">
+            <ul>
+                <li><a class="hd" href="Travilia.com.html">Home</a></li>
+                <li><a href="#">Tour</a>
+                    <div class="sub-tour">
+                        <ul>
+                            <li><a href="chandigarh.html">Chandigarh</a></li>
+                            <li><a href="#">Panaji</a></li>
+                            <li><a href="#">Amaravati</a></li>
+                            <li><a href="#">Dispur</a></li>
+                            <li><a href="#">Itanagar</a></li>
+                            <li><a href="#">Patna</a></li>
+                            <li><a href="#">Raipur</a></li>
+                            <li><a href="#">Shimla</a></li>
+                            <li><a href="#">Ranchi</a></li>
+                            <li><a href="#">Bengaluru</a></li>
+                            <li><a href="#">Thiruvananthapuram</a></li>
+                            <li><a href="lucknow.html">Lucknow</a></li>
+                            <li><a href="#">Bhopal</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Imphal</a></li>
+                            <li><a href="#">Shilong</a></li>
+                            <li><a href="#">Aizawl</a></li>
+                            <li><a href="#">Kohima</a></li>
+                            <li><a href="#">Bhubaneshwar</a></li>
+                            <li><a href="#">Jaipur</a></li>
+                            <li><a href="#">Gangtok</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Hydrabad</a></li>
+                            <li><a href="#">Agartala</a></li>
+                            <li><a href="#">Dehradun</a></li>
+                            <li><a href="kolkata.html">Kolkata</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="hd" href="India_Map - Copy.html">Map</a></li>
+                <li><a class="hd" href="statesas.html">States</a></li>
+                <li><a class="hd" href="Travilia.com.html">About us</a></li>
+
+            </ul>
+        </div>
+
     </nav>
-    <div class='img'></div>
+
+
+
+    
+    <!-- Slideshow -->
+
+
+    <div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="sikkim_m1.jpg" height="560px" style="width:100%">
+                <div class="text">
+                    <h3> Sikkim </h3>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="sikkim_culture.jpg" height="560px" style="width:100%">
+                <div class="text">
+                    <h3> Sikkim </h3>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="wallpaperflare.com_wallpaper (1).jpg" height="560px" style="width:100% ">
+                <div class="text">
+                    <h3> Sikkim </h3>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="animals_sikkim.jpg" height="560px" style="width:100% ">
+                <div class="text">
+                    <h3> Sikkim </h3>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="wp6560100-sikkim-wallpapers.jpg" height="560px" style="width:100% ">
+                <div class="text">
+                    <h3> Sikkim </h3>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+
+
+    </div>
+    <!-- <div class='img'></div>
     <div class='heading'>
         <center>Sikkim</center>
-    </div>
+    </div> -->
     <br>
     <div class='content'>
         <div class="content-div">

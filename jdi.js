@@ -57,3 +57,12 @@ function login(){
   // }
 
 }
+function tsubmit(){
+  alert("Successfully Submit")
+  document.getElementById("txta").value="";
+
+}
+function psubmit(){
+  alert("Successfully Post")
+  document.getElementById("posta").value="";
+}

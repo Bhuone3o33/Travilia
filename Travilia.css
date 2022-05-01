@@ -154,10 +154,17 @@ nav ul li a:hover{
     background: white;
     color:black
 }
+.col .btnone:hover{
+    /* box-shadow:4px 4px rgb(122, 120, 120)  ; */
+    padding:6px 26px;
+}
 .col .bttwo{
     background: rgb(70, 216, 216);
     color:white;
 }
+.col .bttwo:hover{
+    /* box-shadow:4px 4px rgb(122, 120, 120)  ; */
+    padding:6px 26px;}
 .carde{
     width: 200px;
     height: 230px;
@@ -243,67 +250,204 @@ nav ul li a:hover{
 
 /* aboutus.css */
 
-.about-us{
-    font-family: 'Great Vibes', cursive;
-    background-image: url(br.jpg);
-    background-repeat: no-repeat;
-    background-size: 1600px 1000px;
-}
-.wrapper {
-    margin-top: 5%;
-}
-
-.wrapper h1 {
-    font-size: 52px;
-    margin-bottom: 15px;
-    text-align: center;
+/* review section */
+.review{
+    /*display: grid;*/
+    height: auto;
+    padding:50px 0px 1px 0px;
+    /*place-items: center;*/
+    /*text-align: center;*/
+    background-image: url(moun.jpg);
+    /* background-color:#7a8d93dc; */
 }
 
-.team {
+.container{
+    width: 35%;
+    background: #111;
+    padding: 20px 30px;
+    border:  1px solid #444;
+    border-radius: 5px;
     display: flex;
-    text-align: center;
-    width: auto;
+    align-items: center;
+    margin-top: 0px;
+    margin-left:540px;
+    margin-bottom:100px;
     justify-content: center;
-    padding: 50px;
+    flex-direction: column;
+
 }
 
-.team .team_member {
-    background: rgba(73, 78, 72, 0.918);
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 300px;
-    padding: 30px;
-    line-height: 20px;
-    color: #8e8b8b;
-    position: relative;
-    opacity: 0.8;
+.container .star-widget input{
+    display: none;
+
 }
 
-.team .team_member h3 {
-    color: #64c1d8;
-    font-size: 35px;
-    margin-top: 50px;
+.star-widget label{
+    font-size: 40px;
+    color: rgb(184, 184, 184);
+    padding: 10px;
+    float: right;
+    transition:all 0.2s ease;
 }
-p{font-size: 20px;}
-.team .team_member p.role {
-    color: lightcoral;
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color:rgb(70, 216, 216) ;
+
+}
+input:checked ~ label{
+    color: rgb(70, 216, 216);
+}
+#rate-1:checked ~  form header:before{
+    content: "I Hate It 😠";
+}
+#rate-2:checked ~  form header:before{
+    content: "I Don't Like It 😕";
+}
+#rate-3:checked ~  form header:before{
+    content: "It's Average 🙂";
+}
+#rate-4:checked ~  form header:before{
+    content: "Well Done 😎";
+}
+#rate-5:checked ~  form header:before{
+    content: "Awesome 😍";
+}
+
+
+form header{
+    width: 100%;
     font-size: 25px;
-    /* text-transform: uppercase; */
-    margin: 12px 0;
-    font-weight: bolder;
-}
-.team .team_member .team_img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
+    color:rgba(70, 216, 216, 0.842);
+    font-weight: 500; 
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
 }
 
-.team .team_member .team_img img {
-    width: 100px;
+form .textarea{
     height: 100px;
-    padding: 5px;
+    width:100%;
+    overflow: hidden;
+}
+
+form .textarea textarea{
+    height: 100%;
+    width:100%;
+    outline: none;
+    color: #fff;
+    border:1px solid rgb(82, 81, 81);
+    background: #222;
+    padding:10px;
+    font-size: 17px;
+    resize: none;
+}
+form .btn{
+    height: 45px;
+    width:100%;
+    margin:15px 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border:1px solid #444;
+    outline: none;
+    background: #222;
+    color:rgba(153, 153, 153, 0.719);
+    font-size:17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.btn button:hover{
+    background: #00000086;
+}
+.contact{
+    width: 99%;
+    margin-top: 5px;
+    margin-left: 8px;
+    border-radius: 10px;
+    height: auto;
+    /*background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(contact.jpg);*/
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.5));
+
+}
+.btn2{
+    font-family: "Comfortaa",cursive;
+}
+.fa-copyright{
+    font-family: "Dancing Script",cursive;
+}
+.wcontact{
+    text-align: center;
+    color: white;
+    font-family:"Comfortaa",cursive;
+    font-size: 50px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.411);
+
+}
+.wcontact:hover{
+    font-size: 51px;
+}
+.para{
+    margin-left: 32%;
+    font-size: 30px;
+    padding-top: 5px;
+    color:white;
+    font-family:"Satisfy",cursive; 
+}
+
+.question{
+    /*padding-left: 15px;
+    /*padding-top: 2vh;*/
+    color: ghostwhite;
+    font-family: "Comfortaa",cursive;
+}
+textarea{
+    background-color: inherit;
+    border: 0.3px solid azure;
+    padding: 6px 16px 37px 13px;
+    color: azure;
+    outline: none;
+}
+.textarea1{
+    margin-left: 60%;
+    margin-top: 4px;
+    overflow: hidden;
+    font-family: "Comfortaa",cursive;
+}
+.btn2{
+    padding-left: 84%;
+}
+.btn2 button{
+    background: white;
+    text-shadow: dimgray;
+    border:none;
+    padding:3px;
+    background-color:gray;
+    border-radius:2px;
+}
+.copyright{
+    font-size: 20px;
+    color: whitesmoke;
+    /* font-family: "Dancing Script", cursive; */
+}
+.logo{
+    margin-top: 50px;
+    margin-left: 2%;
+    font-size: 23px;
+    color: whitesmoke;
+    display: space-around;
+
+}
+.logo a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo a:hover{
+    font-size: 25px;
+}
+.question{
+    font-family: "Comfortaa",cursive;
 }

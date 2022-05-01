@@ -1,66 +1,60 @@
 body{
-    background-color: rgb(255, 242, 247);
+    background-color: #7a8d93dc;
 }
+
+
+/* Navigation bar */
+
 nav{
-    background: #bfbfbf;
-    height: 80px;
     width: 100%;
-  }
-    /* p.logo{
-      color: rgb(0, 0, 0);
-      font-size: 55px;
-      line-height: 80px;
-      padding:0px 0px;
-      font-weight: bold;
-      display: inline;
-     } */
-    nav ul{
-        text-align: center;
-    }
-    nav ul li{
-      display: inline-block;
-      line-height: 20px;
-      margin: 0 5px;
-    }
-    nav ul li a{
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      font-size: 17px;
-      padding: 7px 13px;
-      border-radius: 3px;
-      text-transform: uppercase;
-    }
+    height: 10vh;
+    background:rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+nav .logo{
+  width: 20%;
+  text-align: center;
+  color:#fff;
+  font-size: 40px;
+  font-family: 'Great Vibes', cursive;
+}
+  nav .navbar{
+    width:50%;
+    display: flex;
+    justify-content:space-around;
     
-    .hd::after{
-      content: '';
-      width:0%;
-      height: 2px;
-      background: #000000;
-      display:block;
-      margin: 0 5px;
-      transition: 0.3s;
-  }
-  .hd:hover::after{
-      width: 100%;
-  }
+}
+nav .navbar a{
+    width:25%;
+}
+nav .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+nav  .navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(70, 216, 216);
+}
     
   
   
   
   
   
-  
-  .img{
-      background-image: url(UP\ .jpg);
-      background-size:cover;
-      background-position: top;
-      margin-top: 0.1%;
-      margin-left: -0.2%;
-      margin-right: -12%;
-      width: 100.5%;
-      height:100vh;
-      border-radius: 5px;
-  }
+/* Body   */
+
+
   .heading{
       font-family:inherit;
       font-weight: bolder;
@@ -68,8 +62,8 @@ nav{
       color: #ffffff;
       position:absolute;
       margin-left: 90px;
-      top: 350px;
-      left:520px;
+      top: 53%;
+      left:33%;
       text-decoration:  underline  ;
   }
   .content{
@@ -81,21 +75,20 @@ nav{
       flex-direction: row;
       flex-wrap: wrap;
       /* padding: 2%; */
-      justify-content: space-around;
-  
+      justify-content: space-around;  
   }
   
   .content-div{
     flex-basis: 31%;
-    background: #d6d6d6;
+    background: #ffffffcc;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px;
     text-align: center;
     align-items: center;
     color: #000000;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 18px;
     box-sizing: border-box;
   }
   .content-div:hover{
@@ -104,16 +97,22 @@ nav{
   
   .places{
       font-family:initial;
+      color: rgba(0, 0, 0, 0.63);
       text-align:center;
       font-size:30px;
       text-decoration: underline;
       font-weight: bolder;
       
   }
+
+  .places h3{
+    font-family: 'Satisfy', cursive;
+  }
   .f2{
     background-color: #bfbfbf;
+    /* background: #76d5d3a4; */
   /* color: white; */
-  width:100%;
+  width:auto;
   border-radius: 2px;
   padding: 14px 25px;
   text-align: center;
@@ -121,6 +120,7 @@ nav{
   text-decoration: none;
   text-transform: uppercase;
   display:block;
+  font-family: 'Comfortaa',cursive;
   }
   .f2-img1{
     height: auto;
@@ -135,7 +135,7 @@ nav{
   
   }
   .f2-img1:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.301);
   } 
   .f2-img1{
     margin-top: 5%;
@@ -145,22 +145,11 @@ nav{
   }
   .f2-img1{
     flex-basis: 31%;
-    background: #bfbfbf;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 5%;
     padding: 0px;
     text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
     box-sizing: border-box;
-  }
-  .des {
-    list-style: none;
-  } 
-  .des p{
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
   }
   .content{
     margin-top: 5%;
@@ -168,4 +157,3 @@ nav{
     justify-content: space-between;
     
   }
-  
